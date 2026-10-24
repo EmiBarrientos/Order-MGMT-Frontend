@@ -1,9 +1,6 @@
 import { useState } from "react";
 import CreateProductForm from "./ProductForm";
 
-
-
-
 export default function ProductActions({
   visible,
   loading,
@@ -12,10 +9,6 @@ export default function ProductActions({
 }) {
  
   const [formMode, setFormMode] = useState(null); // null | "create" | "edit"
-
-        
-
- 
 
   return (
     <div className="flex flex-col gap-4">
@@ -58,10 +51,6 @@ export default function ProductActions({
 
           </div>  
          )}
-
-
-      
-     
 
         {loading && <span className="text-sm text-gray-300 ml-2">Cargando...</span>}
       </div>
